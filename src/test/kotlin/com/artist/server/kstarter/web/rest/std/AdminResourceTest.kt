@@ -1,11 +1,11 @@
 package com.artist.server.kstarter.web.rest.std
 
+import com.artist.server.domain.core.StdAuthority
 import com.artist.server.kstarter.IntegrationTest
-import com.artist.server.kstarter.domain.core.StdAuthority
-import com.artist.server.kstarter.repository.std.AdminRepository
-import com.artist.server.kstarter.service.std.dto.AdminSaveReqDTO
 import com.artist.server.kstarter.web.rest.WithAuthenticatedMockUser
 import com.artist.server.kstarter.web.rest.convertObjectToJsonBytes
+import com.artist.server.repository.std.AdminRepository
+import com.artist.server.service.std.dto.AdminSaveReqDTO
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

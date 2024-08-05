@@ -1,5 +1,6 @@
 package com.artist.server.kstarter
 
+import com.artist.server.ArtistPortfolioApp
 import com.artist.server.kstarter.config.AsyncSyncConfiguration
 import com.artist.server.kstarter.config.EmbeddedSQL
 import org.springframework.boot.test.context.SpringBootTest
