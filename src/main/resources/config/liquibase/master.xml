@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <property name="now" value="now()" dbms="mariadb"/>
+    <property name="floatType" value="float" dbms="mariadb"/>
+    <property name="clobType" value="clob" dbms="mariadb"/>
+    <property name="blobType" value="longblob" dbms="mariadb"/>
+    <property name="uuidType" value="varchar(36)" dbms="mariadb"/>
+    <property name="datetimeType" value="datetime(6)" dbms="mariadb"/>
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="floatType" value="float" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="blobType" value="longblob" dbms="h2"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2"/>
+    <property name="datetimeType" value="datetime(6)" dbms="h2"/>
+
+    <include file="config/liquibase/changelog/20230125/20230125100725_added_entity_StdAdmin.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100726_added_entity_StdAdminAuthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100727_added_entity_StdAdminPassword.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100730_added_entity_StdAuthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100731_added_entity_StdCommonCode.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100732_added_entity_StdCommonGroupCode.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100733_added_entity_StdContents.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100737_added_entity_StdMessage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100726_added_entity_constraints_StdAdminAuthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100727_added_entity_constraints_StdAdminPassword.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230125/20230125100731_added_entity_constraints_StdCommonCode.xml" relativeToChangelogFile="false"/>
+
+    <include file="/config/liquibase/changelog/std/20230410/20230410_std_base.sql" relativeToChangelogFile="false"/>
+    <include file="/config/liquibase/changelog/std/20230502/20230502_insert_message.sql" relativeToChangelogFile="false"/>
+
+
+</databaseChangeLog>

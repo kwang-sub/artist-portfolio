@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity StdCommonCode.
+    -->
+    <changeSet id="20230125100731-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="common_group_code_id"
+                                 baseTableName="tbl_std_common_code"
+                                 constraintName="fk_tbl_std_common_code__common_group_code_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tbl_std_common_group_code"/>
+    </changeSet>
+</databaseChangeLog>

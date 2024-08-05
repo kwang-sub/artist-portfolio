@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity StdAdminAuthority.
+    -->
+    <changeSet id="20230125100726-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="authority_code_id"
+                                 baseTableName="tbl_std_admin_authority"
+                                 constraintName="fk_tbl_std_admin_authority__authority_code_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tbl_std_authority"/>
+    </changeSet>
+</databaseChangeLog>
